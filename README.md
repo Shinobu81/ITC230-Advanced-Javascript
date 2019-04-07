@@ -1,1 +1,1 @@
-# ITC230-Advanced_Javascript
+# ITC230-Advanced-Javascript
