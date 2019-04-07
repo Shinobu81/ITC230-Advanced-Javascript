@@ -1,2 +1,1 @@
-# ITC230-Advanced-Javascript
-Repository for class ITC230 - Advanced Javascript
+# ITC230-Advanced_Javascript
