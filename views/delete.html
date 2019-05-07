@@ -1,0 +1,18 @@
+<html>
+<head>
+</head>
+<body>
+  <h1>Delete Page</h1>
+  <a href="/">Home</a>
+    {{#if result.delete}}
+  <h2>{{song}} deleted</h2>
+    {{else}}
+  <h2>{{song}} not found</h2>
+    {{/if}}
+  <h3>Search</h3>
+<form method="GET" action="/details">
+  <input type="text" name="song" />
+  <button>Search</button>
+</form>
+</body>
+</html> 
