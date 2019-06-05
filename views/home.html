@@ -1,0 +1,29 @@
+<html>
+<head>
+  <title>Home Page</title>
+</head>
+<body>
+  <div class="box">
+    <h1>Home Page</h1>
+  <form method="GET" action="/details">
+      <input type="text" name="song" placeholder="song" required maxlength="100">
+      <button>Search</button>
+  </form>
+  <h2>Add Song</h2>
+  <form method ="POST" action="/details">
+    Song: <input type="text" name="song" placeholder="song" required maxlength="100" required><br/><br/>
+    Artist: <input type="text" name="artist" placeholder="artist"  required maxlength="100" required><br/><br/>
+    Album: <input type="text" name="album" placeholder="album"  required maxlength="100" required><br/><br/>
+    Year: <input type="number" name="year" placeholder="year"  required maxlength="4" required><br/><br/>
+    <button id="submit">Add Song</button>
+  </form>
+  <br>
+  {{#if music}}
+<h3>Inventory</h3>
+  {{/if}}
+    {{#each music}}
+      <li><a href="/details?song={{song}}">{{song}}</a></li>
+    {{/each}}
+  </div>
+</body>
+</html>

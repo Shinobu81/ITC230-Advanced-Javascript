@@ -1,16 +1,18 @@
 <html>
 <head>
+  <title>Details Page</title>
 </head>
 <body>
     <h1>Details Page</h1>
 <a href="/">Home</a>
-    {{#if result}}
-<h2>{{song}} details:</h2>
-    <li>Song: {{result.song}}</li>
-    <li>Artist: {{result.artist}}</li>
-    <li>Album: {{result.album}}</li>
+    {{#if music}}
+<h2>{{music.song}} details:</h2>
+    <li>Song: {{music.song}}</li>
+    <li>Artist: {{music.artist}}</li>
+    <li>Album: {{music.album}}</li>
+    <li>Year: {{music.year}}</li>
 <p>
-    <a href="/delete?song={{result.song}}">Delete</a>
+    <a href="/delete?song={{music.song}}">Delete</a>
 </p>
     {{else}}
 <h2>{{song}} not found</h2>
